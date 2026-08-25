@@ -19,6 +19,10 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Gemini SDKをインストール
+        run: |
+          pip install google-genai
+
       - name: AIに記事を書かせる
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
