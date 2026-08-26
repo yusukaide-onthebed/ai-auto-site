@@ -1,6 +1,8 @@
 name: AI記事生成
 
 on:
+  schedule:
+    - cron: "0 7 * * *"
   workflow_dispatch:
 
 jobs:
